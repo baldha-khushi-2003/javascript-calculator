@@ -1,0 +1,17 @@
+<style>
+    .box{
+        background-color: cornflowerblue;
+        height: 200px;
+        width: 200px;     
+    }
+</style>
+<div onmouseover="moveEvent()"class="box"></div>
+<h1 id="ans"></h1>
+<script>
+    let no =0;
+    const moveEvent=()=>{
+        no++;
+        document.getElementById("ans").innerHTML=no;
+    }
+    
+</script>

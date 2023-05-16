@@ -1,0 +1,73 @@
+<h1 align="center" style="color: aliceblue;">CALCULATOR</h1>
+
+<body style="background-color: black;">
+
+</body>
+<table border="2" align="center" style="border: 2px solid white; height: 200px;">
+    <tr>
+        <td>
+            <input disabled type="text" id="ans"
+                style="background-color: rgb(255, 255, 255); width: 100%; height:30px;" />
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="ans.value+='1'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">1</button>
+            <button onclick="ans.value+='2'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">2</button>
+            <button onclick="ans.value+='3'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">3</button>
+            <button onclick="ans.value+='+'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: rgb(255, 86, 86); color:rgb(0, 0, 0); border: 1px solid white;">+</button>
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="ans.value+='4'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">4</button>
+            <button onclick="ans.value+='5'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">5</button>
+            <button onclick="ans.value+='6'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">6</button>
+            <button onclick="ans.value+='-'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: rgb(255, 86, 86); color:rgb(0, 0, 0); border: 1px solid white;">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="ans.value+='7'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">7</button>
+            <button onclick="ans.value+='8'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">8</button>
+            <button onclick="ans.value+='9'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: dimgrey; color:white; border: 1px solid white;">9</button>
+            <button onclick="ans.value+='*'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: rgb(255, 86, 86); color:rgb(0, 0, 0); border: 1px solid white;">*</button>
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="ans.value+='.'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: rgb(255, 86, 86); color:rgb(0, 0, 0); border: 1px solid white;">.</button>
+            <button onclick="ans.value+='0'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: rgb(255, 86, 86); color:rgb(0, 0, 0); border: 1px solid white;">0</button>
+            <button onclick="ans.value+='/'"
+                style="height:30px; width: 30px; font-size: 20px; background-color: rgb(255, 86, 86); color:rgb(0, 0, 0); border: 1px solid white;">/</button>
+            <button onclick="ans.value=eval(ans.value)"
+                style="height:30px; width: 30px; font-size: 20px; background-color: rgb(255, 86, 86); color:rgb(0, 0, 0); border: 1px solid white;">=</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input onclick="ans.value=''" type="button" value="clear" />
+            <input onclick="printData()" type="button" value="print" />
+            <button onclick="movepage()" style="align-items: center;">PAGE REDIRECT</button>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    const printData = () => {
+        window.print();
+    }
+    const movepage = () => {
+        window.location.href = "array.html";
+    }
+</script>
